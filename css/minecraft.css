@@ -1,0 +1,68 @@
+
+@import url('temp.css');
+
+/* minecraft.css */
+/* based on minecraft's end credits style */
+
+
+@font-face {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Mojang-Regular.ttf")
+         format("truetype");
+}
+
+
+* {
+    font-family: 'Minecraft';
+}
+
+.selector {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+    color: rgba(0, 0, 0, 0);
+    margin: -25px;
+}
+
+p {
+    color: rgba(255, 255, 0, 0.823);
+    transform: rotate(-20deg) translate(325px,80px);
+    width:250px;
+}
+
+body {
+    background-color: #563123;
+    background-image: url("images/Dirt_background_BE1.webp");
+    background-size: cover;
+    color: #ffffffd5;
+    
+}
+
+button {
+    height: 46px;
+    width: 600px;
+    font-size:20px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    background: #999999cc url('bgbtn.png') center / cover;
+    image-rendering: pixelated;
+    border: 2px solid #000;
+    box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+    color: #FFFFFF;
+    text-shadow: 1.5px 1.5px #202013CC;
+    margin:10px 0 0 0;
+}
+
+button:hover {
+    background: url('bgbtn.png') center / cover, rgba(100, 100, 255, 0.45);
+    background-blend-mode: overlay;
+    color: #FFFFA0;
+}
+
+
+

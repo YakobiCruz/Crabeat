@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--- Add the style sheet. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louieat</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/temp.css"/>
+    
+
+    
+    <script>
+        function toggleTheme(value) {
+            
+            // Obtain the name of stylesheet
+            // as a parameter and set it
+            // using href attribute.
+            let sheets = document.getElementsByTagName('link');
+
+            sheets[0].href = value;
+        }
+    </script>
+</head>
+
+    <body>   
+
+        <h1>Louieat</h1>
+
+        <div class="selector">
+            <header>
+                <h2>Changing Style Sheets</h2>
+                <p>Switch between multiple themes using the buttons below.</p>
+            </header>
+
+            <hr>
+
+            <main>
+                <button onclick="toggleTheme('css/purple.css')">
+                    Purple
+                </button>
+
+                <button onclick="toggleTheme('css/spotify.css')">
+                    Spotify
+                </button>
+
+                <button onclick="toggleTheme('css/minecraft.css')">
+                    Minecraft
+                </button>
+
+                <button onclick="toggleTheme('css/old.css')">
+                    Old
+                </button>
+
+                <button onclick="toggleTheme('css/temp.css')">
+                    Temp
+                </button>
+            </main> 
+        </div>
+
+    </body>
+
+</html>
